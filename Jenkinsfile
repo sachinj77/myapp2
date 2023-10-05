@@ -6,14 +6,14 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git url:'https://github.com/sachinj77/myapp1.git', branch:'master'
+        git url:'https://github.com/sachinj77/myapp2.git', branch:'master'
       }
     }
     
       stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("sachinjp/hellowhale:${env.BUILD_ID}")
+                    myapp = docker.build("sachinjp/report-str:${env.BUILD_ID}")
                 }
             }
         }
@@ -33,7 +33,7 @@ pipeline {
     stage('Deploy App') {
       steps {
         script {
-          kubernetesDeploy(configs: "hellowhale.yml", kubeconfigId: "kubcfg")
+          kubernetesDeploy(configs: "report-str.yml", kubeconfigId: "kubcfg")
         }
       }
     }
