@@ -412,7 +412,7 @@ if st.session_state["authentication_status"]:
             if selected_itemname != ' - ':
                 ZABBIX_API_URL = "http://3.139.62.54:8080/api_jsonrpc.php"
                 UNAME = "Zabbix"
-                PWORD = "Paramaah@@123"
+                PWORD = "Nocteam@@456"
 
 
 
@@ -834,7 +834,7 @@ if st.session_state["authentication_status"]:
     if menu_id == "SLA":
         url = "http://3.139.62.54:8080/api_jsonrpc.php"
         user = "Zabbix"
-        password = "Paramaah@@123"
+        password = "Nocteam@@456"
         auth_data = {
             'jsonrpc': '2.0',
             'method': 'user.login',
@@ -1274,7 +1274,7 @@ if st.session_state["authentication_status"]:
         # Zabbix API credentials
         ZABBIX_API_URL = "http://3.139.62.54:8080/api_jsonrpc.php"
         UNAME = "Zabbix"
-        PWORD = "Paramaah@@123"
+        PWORD = "Nocteam@@456"
 
         # Zabbix API headers
         headers = {
@@ -2121,7 +2121,7 @@ if st.session_state["authentication_status"]:
     if menu_id == "subid11":
         ZABBIX_API_URL =  "http://3.139.62.54:8080/api_jsonrpc.php"
         UNAME = "Zabbix"
-        PWORD = "Paramaah@@123"
+        PWORD = "Nocteam@@456"
 
         # Authenticate the user and obtain the authentication token
         r = requests.post(ZABBIX_API_URL,
