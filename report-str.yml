@@ -8,13 +8,13 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: report-app
+      app: report-str-app
       version: blue
   template:
     metadata:
       name: report-str-pod
       labels:
-        app: report-app
+        app: report-str-app
         version: blue
     spec:
       containers:
