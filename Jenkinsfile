@@ -10,24 +10,24 @@ pipeline {
       }
     }
     
-      stage("Build image") {
-            steps {
-                script {
-                    myapp = docker.build("sachinjp/report-str:${env.BUILD_ID}")
-                }
-            }
-        }
+#      stage("Build image") {
+#            steps {
+#                script {
+#                    myapp = docker.build("sachinjp/report-str:${env.BUILD_ID}")
+#                }
+#            }
+#        }
     
-      stage("Push image") {
-            steps {
-                script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhublogin') {
-                            myapp.push("latest")
-                            myapp.push("${env.BUILD_ID}")
-                    }
-                }
-            }
-        }
+#      stage("Push image") {
+#            steps {
+#                script {
+#                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhublogin') {
+#                            myapp.push("latest")
+#                            myapp.push("${env.BUILD_ID}")
+#                   }
+#               }
+#            }
+#        }
 
     
     stage('Deploy App') {
