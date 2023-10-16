@@ -979,7 +979,7 @@ if st.session_state["authentication_status"]:
                         })
 
         print(json.dumps(r.json(), indent=4, sort_keys=True))
-        conn = psycopg2.connect(database="zabbix_db1", user="zabbixuser", password="zabbixpass", host="3.139.62.54", port="5432")
+        conn = psycopg2.connect(database="zabbix_db1", user="zabbixuser", password="zabbixpass", host="18.191.148.66", port="5432")
         def execute_query(SLA_Name,Service_Name):
             # Define the headers for the CSV file
             headers = ['serviceid']
