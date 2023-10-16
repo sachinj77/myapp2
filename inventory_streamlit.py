@@ -410,7 +410,7 @@ if st.session_state["authentication_status"]:
         if load or st.session_state.load_state:
             st.session_state.load_state = True
             if selected_itemname != ' - ':
-                ZABBIX_API_URL = "http://3.139.62.54:8080/api_jsonrpc.php"
+                ZABBIX_API_URL = "http://18.191.148.66:8080/api_jsonrpc.php"
                 UNAME = "Zabbix"
                 PWORD = "Nocteam@@456"
 
@@ -832,7 +832,7 @@ if st.session_state["authentication_status"]:
                 else:
                     st.warning("No data to display on the map. Please apply filters.")
     if menu_id == "SLA":
-        url = "http://3.139.62.54:8080/api_jsonrpc.php"
+        url = "http://18.191.148.66:8080/api_jsonrpc.php"
         user = "Zabbix"
         password = "Nocteam@@456"
         auth_data = {
@@ -1272,7 +1272,7 @@ if st.session_state["authentication_status"]:
         }
     )
         # Zabbix API credentials
-        ZABBIX_API_URL = "http://3.139.62.54:8080/api_jsonrpc.php"
+        ZABBIX_API_URL = "http://18.191.148.66:8080/api_jsonrpc.php"
         UNAME = "Zabbix"
         PWORD = "Nocteam@@456"
 
@@ -2119,7 +2119,7 @@ if st.session_state["authentication_status"]:
                         st.download_button("Download Combined PDF", data=merged_pdf, file_name="combined_pdf.pdf", mime="application/pdf")
 
     if menu_id == "subid11":
-        ZABBIX_API_URL =  "http://3.139.62.54:8080/api_jsonrpc.php"
+        ZABBIX_API_URL =  "http://18.191.148.66:8080/api_jsonrpc.php"
         UNAME = "Zabbix"
         PWORD = "Nocteam@@456"
 
@@ -3588,7 +3588,7 @@ if st.session_state["authentication_status"]:
 
     if menu_id == "Home":
             from collections import Counter
-            zabbix_url = "http://3.139.62.54:8080/api_jsonrpc.php"
+            zabbix_url = "http://18.191.148.66:8080/api_jsonrpc.php"
             zabbix_username = "Zabbix"
             zabbix_password = "Nocteam@@456"
 
