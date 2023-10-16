@@ -1867,7 +1867,7 @@ if st.session_state["authentication_status"]:
 
                     duration_in_days = duration_in_seconds / 86400
 
-                    conn = psycopg2.connect(database="zabbix_db1", user="zabbixuser", password="zabbixpass", host="3.139.62.54", port="5432")
+                    conn = psycopg2.connect(database="zabbix_db1", user="zabbixuser", password="zabbixpass", host="18.191.148.66", port="5432")
                     cursor = conn.cursor()
 
                     query = """
@@ -2864,7 +2864,7 @@ if st.session_state["authentication_status"]:
 
                         duration_in_days = duration_in_seconds / 86400
 
-                        conn = psycopg2.connect(database="zabbix_db1", user="zabbixuser", password="zabbixpass", host="3.139.62.54", port="5432")
+                        conn = psycopg2.connect(database="zabbix_db1", user="zabbixuser", password="zabbixpass", host="18.191.148.66", port="5432")
                         cursor = conn.cursor()
 
                         query = """
@@ -3758,7 +3758,7 @@ if st.session_state["authentication_status"]:
             # Host to ping
 
             # New host to ping
-            host = "3.139.62.54"
+            host = "18.191.148.66"
 
             # Initialize data
             data = pd.DataFrame({'Ping Number': [], 'Reply Status': []})
